@@ -1,6 +1,6 @@
 From centos:6.8
 
-RUN yum -y install gcc wget  boost-devel gcc-c++ openssl-devel perl perl-ExtUtils-Manifest perl-devel
+RUN yum -y install gcc wget  boost-devel gcc-c++ openssl-devel perl perl-ExtUtils-Manifest perl-devel telnet
 RUN mkdir ~/bin && cd ~/bin
 RUN curl -L https://cpanmin.us | perl - App::cpanminus
 RUN cpanm Time::HiRes
